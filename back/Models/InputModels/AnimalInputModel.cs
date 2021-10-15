@@ -5,7 +5,7 @@ namespace AnimalControl.Models.InputModels
     {
         public string name { get; set; }
 
-        public string categoria { get; set; }
+        public string tipo { get; set; }
 
         public float peso { get; set; }
 

@@ -9,7 +9,7 @@ namespace AnimalControl.Models
             Id = Guid.NewGuid().ToString();
             name = Name;
             peso = Peso;
-            categoria = Cat;
+            tipo = Cat;
             nascimento = Nasc;
         }
 
@@ -17,7 +17,7 @@ namespace AnimalControl.Models
 
         public string name { get; private set; }
 
-        public string categoria { get; private set; }
+        public string tipo { get; private set; }
 
         public float peso { get; private set; }
 
@@ -28,7 +28,7 @@ namespace AnimalControl.Models
         {
             name = Name;
             peso = Peso;
-            categoria = Cat;
+            tipo = Cat;
             nascimento = Nasc;
         }
     }

@@ -49,19 +49,19 @@ export default function FormAnimal(props){
             </label>
             <br/>
             <label>
-            Categoia:
+            Tipo:
                 <select
 
                     className="form-select"
                     form="form-cadastro"
-                    name="categoria"
-                    defaultValue={animalOnLoad.categoria}
+                    name="tipo"
+                    defaultValue={animalOnLoad.tipo}
                     ref={register}
 
                 >
                     
                     <option defaultValue hidden>
-                        Escolha uma categoria
+                        Escolha uma tipo
 
                     </option>
                     <option value="cachorro">Cachorro</option>
@@ -69,7 +69,7 @@ export default function FormAnimal(props){
                     <option value="Bode">Bode</option>
                     <option value="Piriquito">Piriquito</option>
                 </select>
-                &nbsp;<span>{errors.categoria?.message}</span>
+                &nbsp;<span>{errors.tipo?.message}</span>
             </label>
             <br/>
             <label>
@@ -79,7 +79,7 @@ export default function FormAnimal(props){
             </label>
             <br/>
             <label>
-                nascimento:
+                Nascimento:
                 <input id="date" type="date" name="nascimento"  defaultValue={animalOnLoad.nascimento} ref={register} />
                 &nbsp;<span>{errors.nascimento?.message}</span>
             </label>

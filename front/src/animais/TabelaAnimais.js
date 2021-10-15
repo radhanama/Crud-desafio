@@ -14,6 +14,7 @@ export default function ListagemAnimal(props){
 
   function handleClickExcluirAnimal(id){
         dispatch(deleteAnimaisServer(id));
+        
   }
 
    useEffect(() => {
@@ -45,10 +46,11 @@ export default function ListagemAnimal(props){
 export const LinhaAnimal = (props) => {
     if(props != null && props.animal != null && props.animal.id != null){
       return(
-              <tr><td>{props.animal.name}</td>
-              <td>{props.animal.categoria}</td>
+              <tr><td>{props.animal.nascimento}</td>
+              <td>{props.animal.name}</td>
+              <td>{props.animal.tipo}</td>
               <td>{props.animal.peso}</td>
-              <td>{props.animal.nascimento}</td>
+              
               <td><Link to={`/animais/${props.animal.id}`}><button>Alterar</button></Link></td>
               <td><button id="excluir_animal" name="excluir_animal" onClick={() => props.onClickExcluirAnimal(props.animal.id)}>Excluir</button></td>
             </tr>
@@ -61,13 +63,13 @@ export const LinhaAnimal = (props) => {
 export function TabelaAnimais(props){
     if(props != null && props.animais != null && props.animais.length > 0){
       return(
-          <table border="0">
+          <table border="1">
               <tbody>
               <tr>
-        <th>Nome</th>
-        <th> Categoria </th>
-        <th> Peso </th>
-        <th>Nascimento</th>
+        <th> Data de Nascimento</th>
+        <th> Nome </th>
+        <th> Tipo </th>
+        <th>Peso</th>
         <th>Alterar</th>
         <th>Excluir</th>
         

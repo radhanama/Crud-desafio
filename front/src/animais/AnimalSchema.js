@@ -7,7 +7,7 @@ export let animalSchema = object().shape(
     {
         id: string(),
         name: string().required(),
-        categoria: string().required(),
+        tipo: string().required(),
         nascimento: string().required(),
         peso: number()
     }

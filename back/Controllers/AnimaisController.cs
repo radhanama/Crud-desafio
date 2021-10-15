@@ -41,10 +41,10 @@ namespace AnimalControl.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] AnimalInputModel novaAnimal)
         {
-            var animal = new Animal(novaAnimal.name, novaAnimal.peso, novaAnimal.categoria, novaAnimal.nascimento);
+            var animal = new Animal(novaAnimal.name, novaAnimal.peso, novaAnimal.tipo, novaAnimal.nascimento);
 
             _animaisRepository.Adicionar(animal);
-            Console.WriteLine("POST {0}: {1}", novaAnimal.categoria, novaAnimal.name);
+            Console.WriteLine("POST {0}: {1}", novaAnimal.tipo, novaAnimal.name);
             return Created("", animal);
         }
 
@@ -59,7 +59,7 @@ namespace AnimalControl.Controllers
             
             
 
-            animal.AtualizarAnimal(animalAtualizada.name, animalAtualizada.peso, animalAtualizada.categoria, animalAtualizada.nascimento);
+            animal.AtualizarAnimal(animalAtualizada.name, animalAtualizada.peso, animalAtualizada.tipo, animalAtualizada.nascimento);
 
             _animaisRepository.Atualizar(id, animal);
 
