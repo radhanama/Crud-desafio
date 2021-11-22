@@ -11,6 +11,8 @@ jest.mock("../utils", () => ({
 }));
 
 
+jest.useFakeTimers();
+
 let store;
 
 describe('slice', () => {
@@ -29,7 +31,7 @@ describe('slice', () => {
         httpGet.mockImplementation(() => Promise.resolve([
             {
               "nome": "asdasdasd",
-              "sigla": "23123",
+             
               "id": 3
             }
         ]));
@@ -38,10 +40,20 @@ describe('slice', () => {
         expect(store.getState().animais.entities['3']).toEqual(
             {
                 "nome": "asdasdasd",
-                "sigla": "23123",
+            
                 "id": 3
               }
         );
+    })
+    test('dispatch fetch pending', async () => {
+        const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        httpGet.mockImplementation(() => {
+            return wait(1000);
+        });
+        store.dispatch(fetchProjetos());
+        jest.advanceTimersByTime(500);
+        expect(store.getState().animais.status).toBe('loading');
     })
     test('dispatch fetch fullfiled', async () => {
         httpGet.mockImplementation(() => Promise.reject("erro"));
@@ -55,7 +67,7 @@ describe('slice', () => {
 
         let AnimalUpdated = {
             "nome": "cde",
-            "sigla": "abc",
+           
             "id": 1
         };
         httpPut.mockImplementation(() =>  Promise.resolve(AnimalUpdated));
@@ -75,7 +87,7 @@ describe('slice', () => {
 
         let AnimalAdd = {
             "nome": "cde",
-            "sigla": "abc",
+            
             "id": 1
         };
         httpPost.mockImplementation(() =>  Promise.resolve(AnimalAdd));
@@ -87,7 +99,7 @@ describe('slice', () => {
 
         let AnimalAdd = {
             "nome": "cde",
-            "sigla": "abc",
+           
             "id": 1
         };
         httpPost.mockImplementation(() =>  Promise.resolve(AnimalAdd));

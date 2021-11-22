@@ -7,7 +7,11 @@ import {baseUrl} from './baseUrl'
 jest.mock('axios');
 
 test('should fetch users', () => {
-  const users = [{name: 'Bob'}];
+  const users = [{
+    "nome": "cde",
+           
+    "id": 1
+  }];
   const resp = {data: users};
   //axios.get.mockResolvedValue(resp);
 
