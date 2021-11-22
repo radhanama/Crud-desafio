@@ -40,21 +40,11 @@ describe('slice', () => {
         expect(store.getState().animais.entities['3']).toEqual(
             {
                 "nome": "asdasdasd",
-            
                 "id": 3
               }
         );
     })
-    test('dispatch fetch pending', async () => {
-        const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
-
-        httpGet.mockImplementation(() => {
-            return wait(1000);
-        });
-        store.dispatch(fetchProjetos());
-        jest.advanceTimersByTime(500);
-        expect(store.getState().animais.status).toBe('loading');
-    })
+    
     test('dispatch fetch fullfiled', async () => {
         httpGet.mockImplementation(() => Promise.reject("erro"));
         

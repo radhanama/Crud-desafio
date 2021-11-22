@@ -17,7 +17,10 @@ test('should fetch users', () => {
 
   axios.get.mockImplementation(() => Promise.resolve(resp))
 
-  return httpGet().then(data => expect(data).toEqual(users));
+  return httpGet().then(data => expect(data).toEqual([{
+    "nome": "cde",
+    "id": 1
+  }]));
 });
 
 
