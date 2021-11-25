@@ -16,7 +16,7 @@ except:
     print("ERROR - cannot conect to db")
 
 ##################################################################
-@app.route("/animal", methods=["GET"])
+@app.route("/api/animais", methods=["GET"])
 def get_some_animal():
     try:
         data = list(db.animal.find())
@@ -30,13 +30,13 @@ def get_some_animal():
     except Exception as ex:
         print(ex)
         return Response(
-            response=json.dumps({"message": "cannot read users"}),
+            response=json.dumps({"message": "cannot read animal"}),
             status=500,
             mimetype="application/json"
         )
 
 ##################################################################
-@app.route("/animal", methods=["POST"])
+@app.route("/api/animais", methods=["POST"])
 def create_animal():
     try:
         animal = {"name": request.form["name"], "tipo": request.form["tipo"]}
@@ -54,7 +54,7 @@ def create_animal():
 
 
 ##################################################################
-@app.route("/animal/<id>", methods=["DELETE"])
+@app.route("/api/animais/<id>", methods=["DELETE"])
 def delete_some_animal(id):
     try:
         dbResponse = db.animal.delete_one({"_id":ObjectId(id)})
@@ -83,7 +83,7 @@ def delete_some_animal(id):
 
 
 ##################################################################
-@app.route("/animal/<id>", methods=["PUT"])
+@app.route("/api/animais/<id>", methods=["PUT"])
 def put_some_animal(id):
     try:
         animal = {"name": request.form["name"], "tipo": request.form["tipo"]}
@@ -106,7 +106,7 @@ def put_some_animal(id):
     except Exception as ex:
         print(ex)
         return Response(
-            response=json.dumps({"message": "cannot update users"}),
+            response=json.dumps({"message": "cannot update animal"}),
             status=500,
             mimetype="application/json"
         )
@@ -120,4 +120,4 @@ def put_some_animal(id):
 
 
 if __name__ == "__main__":
-    app.run(port=5555, debug=True)
+    app.run(port=5000, debug=True)
