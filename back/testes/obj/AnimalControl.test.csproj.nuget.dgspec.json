@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\AnimalControl.test.csproj": {}
+    "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\AnimalControl.test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\AnimalControl.test.csproj": {
+    "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\AnimalControl.test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\AnimalControl.test.csproj",
+        "projectUniqueName": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\AnimalControl.test.csproj",
         "projectName": "AnimalControl.test",
-        "projectPath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\AnimalControl.test.csproj",
+        "projectPath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\AnimalControl.test.csproj",
         "packagesPath": "C:\\Users\\radhanama\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\obj\\",
+        "outputPath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radhanama\\AppData\\Roaming\\NuGet\\NuGet.Config"

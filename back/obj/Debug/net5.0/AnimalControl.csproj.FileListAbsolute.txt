@@ -49,7 +49,6 @@ C:\Users\radha_p2jxlre\Documents\Desafio\back\obj\Debug\net5.0\AnimalControl.pdb
 C:\Users\radha_p2jxlre\Documents\Desafio\back\obj\Debug\net5.0\AnimalControl.genruntimeconfig.cache
 C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\appsettings.json
-C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\AnimalControl.StaticWebAssets.xml
 C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\AnimalControl.exe
 C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\AnimalControl.deps.json
 C:\Users\radhanama\desafio\Crud-desafio\back\bin\Debug\net5.0\AnimalControl.runtimeconfig.json
@@ -96,3 +95,4 @@ C:\Users\radhanama\desafio\Crud-desafio\back\obj\Debug\net5.0\AnimalControl.dll
 C:\Users\radhanama\desafio\Crud-desafio\back\obj\Debug\net5.0\ref\AnimalControl.dll
 C:\Users\radhanama\desafio\Crud-desafio\back\obj\Debug\net5.0\AnimalControl.pdb
 C:\Users\radhanama\desafio\Crud-desafio\back\obj\Debug\net5.0\AnimalControl.genruntimeconfig.cache
+C:\Users\radhanama\desafio\Crud-desafio\back\obj\Debug\net5.0\staticwebassets\AnimalControl.StaticWebAssets.xml

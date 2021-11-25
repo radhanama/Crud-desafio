@@ -5,8 +5,6 @@ export const httpGet = () =>{
       .get(`${baseUrl}/animais`)
       .then(res =>{
           return res.data || []
-      }).catch(e => {
-          throw e
       })
 }
 
@@ -15,17 +13,13 @@ export const httpDelete = (id) =>{
       .delete(`${baseUrl}/animais/`+id)
       .then(res =>{
           return res.data
-      }).catch(e => {
-          throw e
-      })   
+      })
 }
 
 export const httpPost = (a) =>{
   return axios
       .post(`${baseUrl}/animais`, a).then(res =>{
           return res.data || {}
-      }).catch(e => {
-          throw e
       })
 }
 
@@ -33,8 +27,6 @@ export const httpGetOne = (id) =>{
   return axios
       .get(`${baseUrl}/animais/`+id).then(res =>{
           return res.data || {}
-      }).catch(e => {
-          throw e
       })
 }
 
@@ -42,7 +34,5 @@ export const httpPut = (id, a) =>{
   return axios
       .put(`${baseUrl}/animais/`+id, a).then(res =>{
           return res.data
-      }).catch(e => {
-          throw e
       })
 }

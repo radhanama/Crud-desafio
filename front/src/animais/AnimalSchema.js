@@ -6,9 +6,9 @@ setLocale(ptForm)
 export let animalSchema = object().shape(
     {
         id: string(),
-        name: string().required(),
-        tipo: string().required(),
-        nascimento: string().required(),
+        name: string(),
+        tipo: string(),
+        nascimento: string(),
         peso: number()
     }
 )

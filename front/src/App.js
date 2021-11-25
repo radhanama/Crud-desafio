@@ -1,5 +1,5 @@
 import React from 'react';
-import ListagemAnimal from './animais/TabelaAnimais';
+import ListagemAnimal from './animais/ListagemAnimal';
 import FormAnimal from './animais/FormAnimal';
 import {store} from './store';
 import { Provider } from 'react-redux'

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VBroQCFDzeX2jSHoVeRktoMy8SEuZ9omLYdnC7e0h2VoLvrM8OxijXVEHrBi7THTHxbBVBN0+8pZ14uoZ6uXfA==",
+  "dgSpecHash": "f6fbPL1OtDsWvdY5m1abghvJO5ks04JUaCkoY2AaVBifcfZqp9IlANQ4cdXkZVFKfnfkFf49XDHK5gZINfKZaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\AnimalControl.test\\AnimalControl.test.csproj",
+  "projectFilePath": "C:\\Users\\radhanama\\desafio\\Crud-desafio\\back\\testes\\AnimalControl.test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radhanama\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\radhanama\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
